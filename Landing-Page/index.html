@@ -16,14 +16,14 @@
 
     <div class="header">
         <div class="logo">
-            <img src="./images/logo.png" height="50px" width="50px">  
-            <div class="name"> Ace  Apolonio</div>      
+           <a href="#"><img src="./images/logo.png" height="50px" width="50px"> </a>
+            <a class="myname"  href="#"><div class="name"> Ace  Apolonio</div></a>      
         </div>
         <div class="links">
-            <div class="link">About</div>
-            <div class="link">Blog</div>
-            <div class="link">Portfolio</div>
-            <div class="link">Contact</div>
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Blog</a>
+            <a class="link" href="#">Portfolio</a>
+            <a class="link" href="#">Contact</a>
         </div>
     </div>
 
@@ -124,16 +124,55 @@
     font-family:'Times New Roman', Times, serif;
     font-weight:lighter;
     letter-spacing: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+
+
 }
+
+.myname{
+    text-decoration: none;
+}
+
 .links {
     font-size: 18px;
     display: flex;
     color: #fdfdfd;
-    gap: 90px;
+    gap: 70px;
 }
 
+.link {
+    list-style-type: none;
+    text-decoration: none;
+    color:#F9FAF8
+}
 
+/* From uiverse.io by @adamgiebl */
+.link {
+ color: #ffffff;
+ padding: 0.5em 1.5em;
+ font-size: 18px;
+ background: #e8e8e800;
+ transition: all .2s;
 
+ 
+}
+
+.link:hover {
+ 
+ box-shadow: 6px 6px 12px #c5c5c500,
+             -6px -6px 12px #ffffff52;
+border-radius: 0.5em;
+border: 1px solid #e8e8e8;
+}
+
+.link:active {
+ box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #bcbbbb00;
+background-color: white;
+color: rgb(67, 67, 67);
+}
 /*-------------------------------------------*/
 
 .top {
@@ -194,7 +233,7 @@
   background-color: #e6edf2;
   box-shadow: 0px 15px 20px #3882f6;
   color: rgb(23, 23, 23);
-  transform: translateY(-7px);
+  transform: translateY(-4px);
 }
 
 .topbutton:active {
