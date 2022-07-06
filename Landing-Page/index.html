@@ -12,37 +12,63 @@
 
 <body>
     
-<!-------------------------------------------->
 
-    <div class="header">
-        <div class="logo">
-           <a href="#"><img src="./images/logo.png" height="50px" width="50px"> </a>
-            <a class="myname"  href="#"><div class="name"> Ace  Apolonio</div></a>      
-        </div>
-        <div class="links">
-            <a class="link" href="#">About</a>
-            <a class="link" href="#">Blog</a>
-            <a class="link" href="#">Portfolio</a>
-            <a class="link" href="#">Contact</a>
-        </div>
-    </div>
 
 <!-------------------------------------------->
 
     <div class="top">
-        <div class="topleft">
-            <div class="topbig">Hi, I'm Ace</div>
-            <div class="topsubtext">I'm a self-taught Front-End Web Developer and UI/UX Designer.</div>
-            <button class="topbutton">About me</button>
+
+        <div class="greencircle"> 
+            <img src="./images/greencircle.png" height="600px" width="600px">
         </div>
-        <div class ="topimage">
-            <img  src="./images/Saly-19.png" alt="blue ocean" height="650px" width="650px">
+
+        <div class="purplecircle"> 
+            <img src="./images/purplecircle.png" height="900px" width="900px">
         </div>
+
+        <div class="transparent">
+        <div class="header">
+            <div class="logo">
+               <a class="logon" href="#"><img src="./images/logo.png" height="30px" width="30px"> </a>
+               <a class="myname"  href="#"><div class="name"> Ace  Apolonio</div></a>      
+            </div>
+            <div class="links">
+                <a class="link" href="#">About</a>
+                <a class="link" href="#">Blog</a>
+                <a class="link" href="#">Portfolio</a>
+                <a class="link" href="#">Resume</a>
+                <a class="link" href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="mycard">
+            <div class="topleft">
+                <div class="topbig">Hello,</div>
+                <div class="topbigname">I am <div class="aceapolonio">Ace Apolonio</div></div>
+                <div class="topsubtext">I'm an Engineer, Developer, Businessman, and Author</div>
+
+                <div class="aboutmesocial">
+
+                    <button class="topbutton">About me</button>
+                    
+
+                 </div>
+
+
+            </div>
+            <div class ="topimage">
+                <img  src="./images/profilephoto.png" alt="clay model of me" height="450px" width="450px">
+            </div>
+        </div>
+        </div>
+
     </div>
 
 <!-------------------------------------------->
 
     <div class="midtop">
+
+        
         <div class="midtext">Here's what I'm working on</div>
         <div class="setbox">
             <a href="https://www.wanted.co.kr/" target="_blank" class="box">
@@ -67,11 +93,30 @@
 <!-------------------------------------------->
 
     <div class="midbottom">
-        <div>This is an inspiring quote, or a testimonial from a
-            customer. Maybe it's just filling up space, or maybe
-            people will actually read it. Who knows? All 1 know
-            is that it looks nice.</div>
-        <div>- Thor, God of Thunder</div>
+
+        <div class="orangecircle">
+            <img src="./images/orangecircle.png" height="700px" width="700px">
+        </div>
+
+        <div class="bluecircle">
+            <img src="./images/bluecircle.png" height="550px" width="550px">
+        </div>
+
+        <div class="content">
+
+            <img  class="floatingme" src="./images/me.png" height="400px" width="400px">
+            <div class="midbottomtextbox">
+                <div class="vision">
+                    <p>A few years after I get buried on the ground, no one will remember me. No one will see what I’ve done, no one will admire what I’ve accomplished, no one will know what books I’ve read, what food I like to eat, what music I dance to in the morning. Unless I become a superstar or an inventor or discoverer of something profound, my life would be lost in time. The stories I’ve told about myself would also disappear from the mouths of those who heard them. </p>
+                    <p>This is my daily meditation. It humbles me and it brings me closer to the present moment. My vision is to live simply, humbly, and truthfully; indifferent to things that don’t make a difference, not wasting any moment or any opportunity to grow and to improve. </p>                
+                    <p>I am proud of how I built my life so far. I want to continue living a better, happier life while extending my knowledge further in my field so that I can be of service to those who need me. For that is the only memory I can leave behind that will last forever; not in the minds or mouths but through consequential actions.</p>
+                    <p>When I get old, I want to look back to these memories and be reminded of the joyful moments of my life.</p>
+                </div>
+            </div>
+            <div class="visiontitle">My Vision In Life</div>
+            <img class="pointingme" src="./images/me2.png" height="500px" width="500px">
+
+        </div>
     </div>
 
 <!-------------------------------------------->
@@ -103,22 +148,28 @@
 
 /*-------------------------------------------*/
 
+html, body {
+  margin: 0;
+  padding: 0;
+}  
+
 * {
     font-family: Roboto;
+
 }
 
 .header {
-    background: rgb(118,144,208);
-    background: linear-gradient(90deg, rgba(118,144,208,1) 0%, rgba(84,181,160,1) 35%, rgba(214,183,255,1) 100%);
+    
     color: white;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 130px;
+    padding-left: 100px;
     padding-right: 150px;
-    padding-top: 40px;
-    padding-bottom: 0px;
+    position: relative;
+    top: -10px;
+   
+    
 }
 
 .logo {
@@ -126,17 +177,34 @@
     color: #F9FAF8;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    position: relative;
+    left: -94px;
+    flex: 1;
+    
+
 
 }
 
+.logon {
+    position: relative;
+    top: 3px;
+    right: 1px;
+
+}
+
+
+
 .name{
-    font-family:'Times New Roman', Times, serif;
-    font-weight:lighter;
+    font-family: Roboto Thin;
+    font-weight: 50px;
     letter-spacing: 5px;
     text-decoration: none;
     list-style-type: none;
     color: white;
+    display: flex;
+    flex: 1;
+
     
 
 
@@ -144,29 +212,33 @@
 
 .myname{
     text-decoration: none;
+    display: flex;
+    flex: 1;
     
 }
 
 .links {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 80;
     font-size: 18px;
     display: flex;
     color: #fdfdfd;
-    gap: 70px;
+    gap: 30px;
+    position: relative;
+    right: -150px;
 }
 
 .link {
+    font-family: Roboto Thin;
     list-style-type: none;
     text-decoration: none;
-    color:#F9FAF8
-}
-
-
-.link {
- color: #ffffff;
- padding: 0.5em 1.5em;
- font-size: 18px;
- background: #e8e8e800;
- transition: all .2s;
+    color:#F9FAF8;
+    color: rgb(32, 32, 32);
+    padding: 0.5em 1.5em;
+    font-size: 18px;
+    background: #e8e8e800;
+    transition: all .2s;
+    font-weight: 100;
 
  
 }
@@ -188,39 +260,123 @@ color: rgb(67, 67, 67);
 /*-------------------------------------------*/
 
 .top {
-    background: rgb(118,144,208);
-    background: linear-gradient(90deg, rgba(118,144,208,1) 0%, rgba(84,181,160,1) 35%, rgba(214,183,255,1) 100%);
+    bac    background: rgb(118,144,208);
+kground: linear-gradient(90deg, rgba(118,144,208,1) 0%, rgba(84,181,160,1) 35%, rgba(214,183,255,1) 100%);
     color: white;
     display: flex;
-    padding-left: 150px;
+    padding-left: 60px;
     padding-right: 60px;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 0px;
     border-bottom: 0cm;
+    flex-direction: column;
+    height: 100vh;
+  
 
 
 }
 
-.topimage, img {
+.topleft {
+    position: relative;
+    right: 100px;
+    top: 10px;
+}
+
+
+.transparent {
+    flex: 1;
+    display: flex;
+    background: solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    box-shadow: 2px 4px 40px rgba(53, 53, 53, 0.689);
+    color: #fff;
+    transition: 0.9s ease;
+    backdrop-filter: blur(10px);
+    padding-top: 40px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-height: 80vh;
+    padding-bottom: 40px;
+    top: -1490px;
+
+
+}
+
+.greencircle{
+    position: relative;
+    left: -800px;
+    top: -200px;
+}
+
+.purplecircle {
+    position: relative;
+    left: 800px;
+    top: -600px;
+}
+
+
+.mycard {
+
+    display: flex;
+    align-items: center;
+    position: relative;
     margin-left: 20px;
+
+}
+.topimage {
+    position: relative;
+    right: -20px;
+    top: 30px;
+
+    
+
 
 }
 
 
 .topbig {
-    font-size: 88px;
-    font-weight: bolder;
-    color: #F9FAF8;
+    font-size: 60px;
+    font-weight:70;
+    color:rgb(47, 47, 47);
     margin-bottom: 15px;
-    text-shadow: 4px 4px 10px #444343 ;
+    line-height: 50px;
+    display: flex;
+    flex: 1;
+ 
+}
+
+.topbigname {
+    font-size: 60px;
+    font-weight:70;
+    color:rgb(47, 47, 47);
+    margin-bottom: 24px;
+    line-height: 50px;
+    display: flex;
+
+}
+
+.aceapolonio {
+    margin-left: 20px;
+    font-weight: 800;
+    color:rgb(47, 47, 47);
 }
 
 .topsubtext {
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 25px;
+    font-family: Roboto Thin;
+    margin-left: 5px;
 
 }
 
@@ -235,7 +391,7 @@ color: rgb(67, 67, 67);
   color: rgb(247, 244, 244);
   background-color: #3882f6;;
   border: none;
-  border-radius: 45px;
+  border-radius: 8px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
@@ -265,9 +421,9 @@ color: rgb(67, 67, 67);
     gap: 60px;
     background: rgb(118,144,208);
     background: linear-gradient(90deg, rgba(118,144,208,1) 0%, rgba(84,181,160,1) 35%, rgba(214,183,255,1) 100%);
-    background-image: url(./images/midtop.png);
+    background-image: url(./backgrounds/midtop.png);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     padding-top: 40px;
@@ -277,12 +433,13 @@ color: rgb(67, 67, 67);
 .midtext {
     flex: 1;
     flex-direction: row;
-    color: white;
+    color: rgb(238, 238, 238);
     font-size: 40px;
     font-weight: 800;
-    text-shadow: 4px 4px 10px #090909 ;
+    text-shadow: 4px 4px 20px #090909 ;
     max-height: 60px;
     margin-bottom: 10px;
+    margin-top: 80px;
 
  
 }
@@ -306,6 +463,7 @@ list-style-type: none;
  flex-direction: column;
  padding-left: 15px;
  padding-right: 15px;
+ padding-bottom: 40px;;
 
 }
 
@@ -320,9 +478,13 @@ list-style-type: none;
     display: flex;
     flex: 1;
     gap: 50px;
-    height: 450px;
+    height: 400px;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -40px;
+
+    
 }
 
 .job, .business, .book {
@@ -330,10 +492,27 @@ list-style-type: none;
     justify-content: center;
     display: flex;
     margin-right: 60px;
-
-
+    position: relative;
+    left: 30px;
+    
+ 
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
 
 }
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+
+
 
 .learnmore {
     display: flex;
@@ -345,13 +524,15 @@ list-style-type: none;
     font-weight: 500;
     letter-spacing: 3px;
     margin-top: 20px;
+    
 
 }
 
 .jobapplicationtext, .businesstext, .writingtext {
-    margin-top: 25px;
+    margin: 25px;
     font-weight: 100;
     text-align: center;
+    text-align: justify;
 }
 
 
@@ -360,7 +541,116 @@ list-style-type: none;
 /*-------------------------------------------*/
 
 .midbottom {
-    border: solid red;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./backgrounds/midbottom.png);
+    width: 100%;
+    height: 110vh;
+    align-items: center;
+}
+
+.floatingme {
+
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    margin-top: 50px;
+    margin-right: 910px;
+    position: relative;
+    top: -1200px;
+    left: -70px;
+
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.midbottomtextbox {
+    flex: 1;
+    display: flex;
+    width: 600px;
+    height: 390px;
+    background: solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 4px 40px rgba(53, 53, 53, 0.689);
+    color: #fff;
+    transition: 0.9s ease;
+    backdrop-filter: blur(10px);
+    padding-top: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    top: -1570px;
+    right: -200px;
+    align-items: center;
+    justify-content: center;
+
+  
+
+}
+
+.vision {
+    color: rgb(251, 251, 251);
+    text-align: justify;
+    text-shadow: 4px 4px 20px #444343 ;
+    font-family: Roboto Thin;
+}
+
+.visiontitle {
+    font-family: Roboto;
+    color: white;
+    font-weight: 800;
+    text-shadow: 4px 4px 10px #444343 ;
+    font-size: 60px;
+    position: relative;
+    left: -180px;
+    top: -260px
+}
+.pointingme {
+
+    position: relative;
+    top: -1925px;
+    right: -770px;
+
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+.orangecircle{
+    position: relative;
+    right: -600px;
+    top: -80px;
+
+    
+}
+
+.bluecircle{
+    position: relative;
+    right: 600px;
+    top: -230px;
 }
 
 /*-------------------------------------------*/
